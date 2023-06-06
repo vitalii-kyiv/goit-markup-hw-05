@@ -562,6 +562,14 @@ img {
   border: none;
 }
 
+.modal-close-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-svg:hover,
+.modal-close-svg:focus {
+  fill: #ffffff;
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
