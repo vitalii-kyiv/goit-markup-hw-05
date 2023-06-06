@@ -583,7 +583,7 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 12px 24px;
-  transition-property: background-color, border, box-shadow;
+  transition-property: background-color, border-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -614,7 +614,8 @@ img {
   border: 1px solid var(--second-text-color);
 }
 
-.examples-item:hover .examples-img-overlay {
+.examples-link:focus .examples-img-overlay,
+.examples-link:hover .examples-img-overlay {
   transform: translate(0, 0);
 }
 
@@ -644,9 +645,7 @@ img {
   bottom: 0;
   background-color: var(--logo-color);
   color: var(--second-text-color);
-  padding-top: 40px;
-  padding-left: 56px;
-  padding-right: 56px;
+  padding: 40px 32px;
   overflow: auto;
   transform: translate(0, 100%);
   transition-property: transform;
