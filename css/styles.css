@@ -373,7 +373,7 @@ img {
   fill: var(--third-background-color);
 }
 
-/**PORTFOLIO-------------- COSTUMERS------------------ */
+/**MAIN-------------- COSTUMERS------------------ */
 .customers {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -410,7 +410,7 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: var(--third-btn-color);
-  transition-property: background-color, border-color;
+  transition-property: color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
