@@ -41,6 +41,11 @@ img {
   display: block;
 }
 
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -483,25 +488,46 @@ img {
 }
 
 .form-wrap {
-  display: flex;
 }
-.form-input-wrap {
-  margin-right: 24px;
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-form-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: var(--white-background);
 }
 
 .footer-form-name {
 }
+
 .footer-form-input {
-  margin-top: 16px;
-  display: block;
+  padding-left: 16px;
   width: 264px;
   height: 40px;
+  color: var(--white-background);
+  background-color: var(--hero-background);
+  border-radius: 4px;
+  border: 1px solid var(--white-background);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.48px;
 }
 
 .footer-form-btn {
   display: flex;
-  width: 165px;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
   height: 40px;
+  color: var(--white-background);
+  background-color: var(--accent);
+  border-radius: 4px;
+  border: none;
 }
 
 /* <!-- !!!BACKDROP!! ---------------------------------------------------------------------------> */
