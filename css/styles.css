@@ -658,6 +658,22 @@ input {
 }
 .madal-form-checkbox {
 }
+.modal-form-checkbox-custom {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 4px;
+  fill: transparent;
+}
+
+.madal-form-checkbox:checked + .modal-form-checkbox-custom {
+  fill: var(--light-background);
+  background-color: var(--active-state);
+}
+
+.madal-form-checkbox {
+}
+
 .modal-form-checkbox-name {
 }
 .modal-form-checkbox-link {
