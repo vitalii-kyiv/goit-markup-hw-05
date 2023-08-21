@@ -613,6 +613,8 @@ input {
   margin-bottom: 16px;
 }
 .modal-form-name {
+  display: block;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
@@ -624,9 +626,13 @@ input {
 .modal-form-input {
   width: 100%;
   height: 40px;
+  padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   transition: color var(--animation);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color var(--animation);
 }
 .modal-form-input:hover,
 .modal-form-input:focus {
@@ -635,15 +641,30 @@ input {
 
 .modal-form-icon {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: 16px;
   bottom: 8px;
+  transition: fill var(--animation);
 }
 .modal-form-text-input {
   width: 100%;
   height: 120px;
+  padding: 8px 16px;
+  resize: none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  padding: 8px 16px;
+  outline: transparent;
+  transition: border-color var(--animation);
+}
+
+.modal-form-text-input:focus {
+  border-color: var(--accent);
 }
 
 .modal-form-text-input::placeholder {
@@ -672,7 +693,7 @@ input {
   fill: transparent;
 }
 
-.madal-form-checkbox:checked + .modal-form-checkbox-custom {
+.madal-form-checkbox:checked > .modal-form-checkbox-custom {
   fill: var(--light-background);
   background-color: var(--active-state);
 }
@@ -682,6 +703,10 @@ input {
 
 .modal-form-checkbox-name {
   display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--help-text);
 }
 .modal-form-checkbox-link {
 }
