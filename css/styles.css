@@ -659,6 +659,12 @@ input {
 .madal-form-checkbox {
 }
 .modal-form-checkbox-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   cursor: pointer;
@@ -675,6 +681,7 @@ input {
 }
 
 .modal-form-checkbox-name {
+  display: block;
 }
 .modal-form-checkbox-link {
 }
