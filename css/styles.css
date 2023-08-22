@@ -707,7 +707,8 @@ input {
   cursor: pointer;
   padding: 4px;
   fill: transparent;
-  transition: background-color border fill var(--animation);
+  transition: background-color var(--animation), border var(--animation),
+    fill var(--animation);
 }
 
 .madal-form-checkbox:checked
