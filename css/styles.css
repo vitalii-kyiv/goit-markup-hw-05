@@ -738,11 +738,11 @@ input {
   display: block;
   min-width: 169px;
   height: 56px;
+  margin: 0 auto;
   color: var(--white-background);
   background-color: var(--accent);
   cursor: pointer;
   border: none;
-
   border-radius: 4px;
   transition: background-color var(--animation);
 }
